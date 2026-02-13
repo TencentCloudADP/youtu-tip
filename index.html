@@ -292,7 +292,7 @@
                             <thead>
                                 <tr>
                                     <th>Benchmark</th>
-                                    <th>Qwen3-VL 4B</th>
+                                    <!-- <th>Qwen3-VL 4B</th> -->
                                     <th>InternVL-3.5 4B</th>
                                     <th>UFO 8B</th>
                                     <th class="text-purple-600">Youtu-VL 4B</th>
@@ -300,23 +300,23 @@
                             </thead>
                             <tbody>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Visual Grounding</td></tr>
-                                <tr><td>RefCOCO val</td><td>90.7%</td><td>92.5%</td><td>91.8%</td><td class="highlight-win">93.6%</td></tr>
-                                <tr><td>RefCOCO testA</td><td>92.2%</td><td>94.3%</td><td>94.3%</td><td class="highlight-win">95.2%</td></tr>
-                                <tr><td>RefCOCO+ val</td><td>82.9%</td><td>87.6%</td><td>86.9%</td><td class="highlight-win">90.1%</td></tr>
-                                <tr><td>RefCOCOg test</td><td>87.7%</td><td>89.3%</td><td>88.6%</td><td class="highlight-win">92.9%</td></tr>
+                                <tr><td>RefCOCO val</td><td>92.5%</td><td>91.8%</td><td class="highlight-win">93.6%</td></tr>
+                                <tr><td>RefCOCO testA</td><td>94.3%</td><td>94.3%</td><td class="highlight-win">95.2%</td></tr>
+                                <tr><td>RefCOCO+ val</td><td>87.6%</td><td>86.9%</td><td class="highlight-win">90.1%</td></tr>
+                                <tr><td>RefCOCOg test</td><td>89.3%</td><td>88.6%</td><td class="highlight-win">92.9%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Semantic Segmentation</td></tr>
-                                <tr><td>ADE20k</td><td>×</td><td>×</td><td>54.5%</td><td class="highlight-second">54.2%</td></tr>
-                                <tr><td>Cityscapes</td><td>×</td><td>×</td><td>-</td><td class="highlight-win">70.4%</td></tr>
-                                <tr><td>VOC20</td><td>×</td><td>×</td><td>-</td><td class="highlight-win">92.5%</td></tr>
+                                <tr><td>ADE20k</td><td>×</td><td>54.5%</td><td class="highlight-second">54.2%</td></tr>
+                                <tr><td>Cityscapes</td><td>×</td><td>-</td><td class="highlight-win">70.4%</td></tr>
+                                <tr><td>VOC20</td><td>×</td><td>-</td><td class="highlight-win">92.5%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Referring Segmentation</td></tr>
-                                <tr><td>RefCOCO val</td><td>×</td><td>×</td><td>80.0%</td><td class="highlight-win">80.7%</td></tr>
-                                <tr><td>RefCOCO testA</td><td>×</td><td>×</td><td>81.6%</td><td class="highlight-win">82.0%</td></tr>
+                                <tr><td>RefCOCO val</td><td>×</td><td>80.0%</td><td class="highlight-win">80.7%</td></tr>
+                                <tr><td>RefCOCO testA</td><td>×</td><td>81.6%</td><td class="highlight-win">82.0%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Depth Estimation</td></tr>
-                                <tr><td>NYUv2 (δ1)</td><td>×</td><td>×</td><td>93.6%</td><td class="highlight-second">90.4%</td></tr>
-                                <tr><td>Cityscapes</td><td>×</td><td>×</td><td>-</td><td class="highlight-win">92.7%</td></tr>
+                                <tr><td>NYUv2 (δ1)</td><td>×</td><td>93.6%</td><td class="highlight-second">90.4%</td></tr>
+                                <tr><td>Cityscapes</td><td>×</td><td>-</td><td class="highlight-win">92.7%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Object Counting</td></tr>
-                                <tr><td>TallyQA-Simple</td><td>79.0%</td><td>77.6%</td><td>×</td><td class="highlight-win">85.1%</td></tr>
-                                <tr><td>CountBench</td><td>78.4%</td><td>79.4%</td><td>×</td><td class="highlight-win">88.6%</td></tr>
+                                <tr><td>TallyQA-Simple</td><td>77.6%</td><td>×</td><td class="highlight-win">85.1%</td></tr>
+                                <tr><td>CountBench</td><td>79.4%</td><td>×</td><td class="highlight-win">88.6%</td></tr>
                             </tbody>
                         </table>
                         <p class="text-xs text-slate-500 mt-4 text-center" data-i18n="vl_table_note1">* × 表示模型不支持该任务。</p>
@@ -330,30 +330,30 @@
                                     <th>Benchmark</th>
                                     <th>Qwen3-VL 8B</th>
                                     <th>InternVL-3.5 4B</th>
-                                    <th>Qwen3-VL 4B</th>
+                                    <!-- <th>Qwen3-VL 4B</th> -->
                                     <th class="text-purple-600">Youtu-VL 4B</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">General VQA</td></tr>
-                                <tr><td>MMBench_EN</td><td>84.5%</td><td>80.3%</td><td>83.9%</td><td class="highlight-second">83.9%</td></tr>
-                                <tr><td>MMStar</td><td>70.9%</td><td>65.0%</td><td>69.8%</td><td class="highlight-win">71.1%</td></tr>
-                                <tr><td>MME (/2800)</td><td>-</td><td>2272</td><td>2309</td><td class="highlight-win">2384</td></tr>
-                                <tr><td>ScienceQA_val</td><td>-</td><td>-</td><td>94.7%</td><td class="highlight-win">97.0%</td></tr>
+                                <tr><td>MMBench_EN</td><td>84.5%</td><td>80.3%</td><td class="highlight-second">83.9%</td></tr>
+                                <tr><td>MMStar</td><td>70.9%</td><td>65.0%</td><td class="highlight-win">71.1%</td></tr>
+                                <tr><td>MME (/2800)</td><td>-</td><td>2272</td><td class="highlight-win">2384</td></tr>
+                                <tr><td>ScienceQA_val</td><td>-</td><td>-</td><td class="highlight-win">97.0%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Multimodal Reasoning</td></tr>
-                                <tr><td>VisuLogic</td><td>22.5%</td><td>-</td><td>19.0%</td><td class="highlight-win">25.7%</td></tr>
-                                <tr><td>MathVista_mini</td><td>77.2%</td><td>77.1%</td><td>73.7%</td><td class="highlight-second">76.5%</td></tr>
-                                <tr><td>MathVerse_mini</td><td>62.1%</td><td>45.8%</td><td>46.8%</td><td class="highlight-second">56.5%</td></tr>
-                                <tr><td>VLMsAreBlind</td><td>74.0%</td><td>-</td><td>71.9%</td><td class="highlight-win">88.9%</td></tr>
+                                <tr><td>VisuLogic</td><td>22.5%</td><td>-</td>><td class="highlight-win">25.7%</td></tr>
+                                <tr><td>MathVista_mini</td><td>77.2%</td><td>77.1%</td><td class="highlight-second">76.5%</td></tr>
+                                <tr><td>MathVerse_mini</td><td>62.1%</td><td>45.8%</td><td class="highlight-second">56.5%</td></tr>
+                                <tr><td>VLMsAreBlind</td><td>74.0%</td><td>-</td><td class="highlight-win">88.9%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">OCR & Document</td></tr>
-                                <tr><td>AI2D_test</td><td>85.7%</td><td>82.6%</td><td>84.1%</td><td class="highlight-second">85.6%</td></tr>
-                                <tr><td>DocVQA_val</td><td>96.1%</td><td>92.4%</td><td>95.3%</td><td class="highlight-second">94.4%</td></tr>
-                                <tr><td>ChartQA_test</td><td>89.6%</td><td>86.0%</td><td>84.6%</td><td class="highlight-second">85.3%</td></tr>
+                                <tr><td>AI2D_test</td><td>85.7%</td><td>82.6%</td><td class="highlight-second">85.6%</td></tr>
+                                <tr><td>DocVQA_val</td><td>96.1%</td><td>92.4%</td><td class="highlight-second">94.4%</td></tr>
+                                <tr><td>ChartQA_test</td><td>89.6%</td><td>86.0%</td><td class="highlight-second">85.3%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">GUI Agent</td></tr>
-                                <tr><td>ScreenSpot Pro</td><td>54.6%</td><td>-</td><td>59.5%</td><td class="highlight-win">59.6%</td></tr>
-                                <tr><td>OSWorld</td><td>33.9%</td><td>-</td><td>26.2%</td><td class="highlight-win">38.8%</td></tr>
+                                <tr><td>ScreenSpot Pro</td><td>54.6%</td><td>-</td><td class="highlight-win">59.6%</td></tr>
+                                <tr><td>OSWorld</td><td>33.9%</td><td>-</td><td class="highlight-win">38.8%</td></tr>
                                 <tr><td colspan="5" class="font-semibold bg-slate-50 text-slate-700">Real-World</td></tr>
-                                <tr><td>RealWorldQA</td><td>71.5%</td><td>66.3%</td><td>70.9%</td><td class="highlight-win">74.6%</td></tr>
+                                <tr><td>RealWorldQA</td><td>71.5%</td><td>66.3%</td><td class="highlight-win">74.6%</td></tr>
                             </tbody>
                         </table>
                         <p class="text-xs text-slate-500 mt-4 text-center" data-i18n="vl_table_note2">* 对比同级别 VLM 指令模型表现。</p>
