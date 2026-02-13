@@ -162,73 +162,73 @@ We provide Base and Instruct models with strong results across benchmarks, plus 
 
 ### Base Model
 #### General Benchmarks
-| Type | Benchmark (Metric) | # Shots | Qwen3-1.7B-Base | SmoLM3-3B-Base | Gemma3-4B-Base | Llama3.1-8B | Youtu-LLM-2B-Base |
+| Type | Benchmark (Metric) | # Shots | Youtu-LLM-2B-Base | Qwen3-1.7B-Base | SmoLM3-3B-Base | Gemma3-4B-Base | Llama3.1-8B |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Commonsense  | MMLU-Pro (EM) | 5 | 34.9% | 35.3% | 29.4% | <u>36.2%</u> | **48.4%** |
-|              | MLQA-Zh (EM) | 3 | 38.1% | 38.0% | 40.3% | <u>43.0%</u> | **43.5%** |
-|              | MMLU-ProX-Zh (EM) | 5 | <u>32.5%</u> | 26.7% | 24.2% | 25.4% | **40.7%** |
-| STEM         | GSM8K (EM) | 8 | <u>68.2%</u> | 67.3% | 38.5% | 47.8% | **77.6%** |
-|              | MGSM-Zh (EM) | 8 | <u>57.1%</u> | 40.7% | 33.0% | 35.9% | **68.9%** |
-|              | MATH (EM) | 4 | 28.1% | <u>40.8%</u> | 24.4% | 21.5% | **44.4%** |
-|              | BBH (EM) | 3 | 53.0% | 59.8% | 51.6% | **62.9%** | <u>59.8%</u> |
-|              | GPQA-MC (Acc. Norm) | 5 | <u>30.4%</u> | 26.6% | 28.6% | 30.1% | **33.3%** |
-|              | HLE-MC (Acc. Norm) | 3 | 10.7% | 3.1% | 8.0% | <u>11.5%</u> | **17.4%** |
-| Coding       | MBPP (Pass@1) | 3 | <u>55.6%</u> | 51.0% | 45.8% | 49.4% | **66.6%** |
-|              | MBPP+ (Pass@1) | 3 | <u>71.0%</u> | 66.1% | 61.9% | 62.7% | **81.8%** |
-|              | HumanEval (Pass@1) | 0 | <u>49.9%</u> | 34.8% | 36.6% | 36.0% | **64.6%** |
-|              | HumanEval+ (Pass@1) | 0 | <u>41.3%</u> | 28.1% | 28.1% | 28.1% | **57.3%** |
-|              | LiveCodeBench v6 (Pass@1) | 3 | <u>5.1%</u> | 2.9% | 2.9% | 3.4% | **9.7%** |
-|              | CRUXEval (Pass@1) | 1 | 40.6% | 42.1% | 39.7% | <u>42.3%</u> | **55.9%** |
-|              | RepoBench (EM) | 3 | 21.0% | 21.8% | <u>23.0%</u> | **25.2%** | 22.7% |
-| Long Context | LongBench v2 (Acc.) | 3 | <u>28.0%</u> | **28.8%** | 26.6% | 27.8% | 27.2% |
-|              | NIAH (Acc.) | / | 79.8% | 75.0% | <u>99.5%</u> | **99.8%** | 98.8% |
+| Commonsense | MMLU-Pro (EM) | 5 | **48.4%** | 34.9% | 35.3% | 29.4% | <u>36.2%</u> |
+|  | MLQA-Zh (EM) | 3 | **43.5%** | 38.1% | 38.0% | 40.3% | <u>43.0%</u> |
+|  | MMLU-ProX-Zh (EM) | 5 | **40.7%** | <u>32.5%</u> | 26.7% | 24.2% | 25.4% |
+| STEM | GSM8K (EM) | 8 | **77.6%** | <u>68.2%</u> | 67.3% | 38.5% | 47.8% |
+|  | MGSM-Zh (EM) | 8 | **68.9%** | <u>57.1%</u> | 40.7% | 33.0% | 35.9% |
+|  | MATH (EM) | 4 | **44.4%** | 28.1% | <u>40.8%</u> | 24.4% | 21.5% |
+|  | BBH (EM) | 3 | <u>59.8%</u> | 53.0% | 59.8% | 51.6% | **62.9%** |
+|  | GPQA-MC (Acc. Norm) | 5 | **33.3%** | <u>30.4%</u> | 26.6% | 28.6% | 30.1% |
+|  | HLE-MC (Acc. Norm) | 3 | **17.4%** | 10.7% | 3.1% | 8.0% | <u>11.5%</u> |
+| Coding | MBPP (Pass@1) | 3 | **66.6%** | <u>55.6%</u> | 51.0% | 45.8% | 49.4% |
+|  | MBPP+ (Pass@1) | 3 | **81.8%** | <u>71.0%</u> | 66.1% | 61.9% | 62.7% |
+|  | HumanEval (Pass@1) | 0 | **64.6%** | <u>49.9%</u> | 34.8% | 36.6% | 36.0% |
+|  | HumanEval+ (Pass@1) | 0 | **57.3%** | <u>41.3%</u> | 28.1% | 28.1% | 28.1% |
+|  | LiveCodeBench v6 (Pass@1) | 3 | **9.7%** | <u>5.1%</u> | 2.9% | 2.9% | 3.4% |
+|  | CRUXEval (Pass@1) | 1 | **55.9%** | 40.6% | 42.1% | 39.7% | <u>42.3%</u> |
+|  | RepoBench (EM) | 3 | 22.7% | 21.0% | 21.8% | <u>23.0%</u> | **25.2%** |
+| Long Context | LongBench v2 (Acc.) | 3 | 27.2% | <u>28.0%</u> | **28.8%** | 26.6% | 27.8% |
+|  | NIAH (Acc.) | / | 98.8% | 79.8% | 75.0% | <u>99.5%</u> | **99.8%** |
 
 #### Agentic Benchmarks
 We takes [APTBench](https://github.com/TencentYoutuResearch/APTBench/) for evaluating the agentic capabilities of base model.
 
-| Category | Qwen3-1.7B-Base | SmoLM3-3B-Base | Gemma3-4B-Base | Llama3.1-8B | Youtu-LLM-2B-Base |
+| Category | Youtu-LLM-2B-Base | Qwen3-1.7B-Base | SmoLM3-3B-Base | Gemma3-4B-Base | Llama3.1-8B |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Code | 25.1% | 24.3% | <u>32.8%</u> | 23.6% | **37.9%** |
-| Deep Research | 28.5% | 27.2% | <u>36.4%</u> | 30.0% | **38.6%** |
-| Math | 59.9% | <u>60.7%</u> | 59.8% | 60.1% | **68.0%** |
-| Tool | 56.7% | 59.1% | 61.7% | <u>64.1%</u> | **64.2%** |
+| Code | **37.9%** | 25.1% | 24.3% | <u>32.8%</u> | 23.6% |
+| Deep Research | **38.6%** | 28.5% | 27.2% | <u>36.4%</u> | 30.0% |
+| Math | **68.0%** | 59.9% | <u>60.7%</u> | 59.8% | 60.1% |
+| Tool | **64.2%** | 56.7% | 59.1% | 61.7% | <u>64.1%</u> |
 
 ### Instruct Model
 #### General Benchmarks
-| Benchmark | DeepSeek-R1-Distill-Qwen-1.5B | Qwen3-1.7B | SmolLM3-3B | DeepSeek-R1-Distill-Llama-8B | Youtu-LLM-2B |
+| Benchmark | Youtu-LLM-2B | DeepSeek-R1-Distill-Qwen-1.5B | Qwen3-1.7B | SmolLM3-3B | DeepSeek-R1-Distill-Llama-8B |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Commonsense Knowledge Reasoning** | | | | | |
-| MMLU-Redux | 53.0% | 74.1% | 75.6% | **78.1%** | <u>75.8%</u> |
-| MMLU-Pro | 36.5% | 54.9% | 53.0% | <u>57.5%</u> | **61.6%** |
-| **Instruction Following & Text Reasoning** | | | | | |
-| IFEval | 29.4% | <u>70.4%</u> | 60.4% | 34.6% | **81.2%** |
-| DROP | 41.3% | 72.5% | 72.0% | <u>73.1%</u> | **86.7%** |
-| MUSR | 43.8% | 56.6% | 54.1% | **59.7%** | <u>57.4%</u> |
-| **STEM** | | | | | |
-| MATH-500 | 84.8% | 89.8% | <u>91.8%</u> | 90.8% | **93.7%** |
-| AIME 24 | 30.2% | 44.2% | 46.7% | <u>52.5%</u> | **65.4%** |
-| AIME 25 | 23.1% | <u>37.1%</u> | 34.2% | 34.4% | **49.8%** |
-| GPQA-Diamond | 33.6% | 36.9% | 43.8% | <u>45.5%</u> | **48.0%** |
-| BBH | 31.0% | 69.1% | 76.3% | **77.8%** | <u>77.5%</u> |
-| **Coding** | | | | | |
-| HumanEval | 64.0% | 84.8% | 79.9% | <u>88.1%</u> | **95.9%** |
-| HumanEval+ | 59.5% | 76.2% | 74.7% | <u>82.5%</u> | **89.0%** |
-| MBPP | 51.5% | <u>80.5%</u> | 66.7% | 73.9% | **85.0%** |
-| MBPP+ | 44.2% | <u>67.7%</u> | 56.7% | 61.0% | **71.7%** |
-| LiveCodeBench v6 | 19.8% | 30.7% | 30.8% | <u>36.8%</u> | **43.7%** |
+| **Commonsense Knowledge Reasoning** |  |  |  |  |  |
+| MMLU-Redux | <u>75.8%</u> | 53.0% | 74.1% | 75.6% | **78.1%** |
+| MMLU-Pro | **61.6%** | 36.5% | 54.9% | 53.0% | <u>57.5%</u> |
+| **Instruction Following & Text Reasoning** |  |  |  |  |  |
+| IFEval | **81.2%** | 29.4% | <u>70.4%</u> | 60.4% | 34.6% |
+| DROP | **86.7%** | 41.3% | 72.5% | 72.0% | <u>73.1%</u> |
+| MUSR | <u>57.4%</u> | 43.8% | 56.6% | 54.1% | **59.7%** |
+| **STEM** |  |  |  |  |  |
+| MATH-500 | **93.7%** | 84.8% | 89.8% | <u>91.8%</u> | 90.8% |
+| AIME 24 | **65.4%** | 30.2% | 44.2% | 46.7% | <u>52.5%</u> |
+| AIME 25 | **49.8%** | 23.1% | <u>37.1%</u> | 34.2% | 34.4% |
+| GPQA-Diamond | **48.0%** | 33.6% | 36.9% | 43.8% | <u>45.5%</u> |
+| BBH | <u>77.5%</u> | 31.0% | 69.1% | 76.3% | **77.8%** |
+| **Coding** |  |  |  |  |  |
+| HumanEval | **95.9%** | 64.0% | 84.8% | 79.9% | <u>88.1%</u> |
+| HumanEval+ | **89.0%** | 59.5% | 76.2% | 74.7% | <u>82.5%</u> |
+| MBPP | **85.0%** | 51.5% | <u>80.5%</u> | 66.7% | 73.9% |
+| MBPP+ | **71.7%** | 44.2% | <u>67.7%</u> | 56.7% | 61.0% |
+| LiveCodeBench v6 | **43.7%** | 19.8% | 30.7% | 30.8% | <u>36.8%</u> |
 
 #### Agentic Benchmarks
-| Benchmark | Qwen3-1.7B | SmolLM3-3B | Youtu-LLM-2B |
+| Benchmark | Youtu-LLM-2B | Qwen3-1.7B | SmolLM3-3B |
 | :--- | :---: | :---: | :---: |
-| **Deep Research** | | | |
-| GAIA | 11.4% | 11.7% | **33.9%** |
-| xbench | 11.7% | 13.9% | **19.5%** |
-| **Code** | | | |
-| SWE-Bench-Verified | 0.6% | 7.2% | **17.7%** |
-| EnConda-Bench | 10.8% | 3.5% | **21.5%** |
-| **Tool** | | | |
-| BFCL V3 | 55.5% | 31.5% | **58.0%** |
-| τ²-Bench | 2.6% | 9.7% | **15.0%** |
+| **Deep Research** |  |  |  |
+| GAIA | **33.9%** | 11.4% | 11.7% |
+| xbench | **19.5%** | 11.7% | 13.9% |
+| **Code** |  |  |  |
+| SWE-Bench-Verified | **17.7%** | 0.6% | 7.2% |
+| EnConda-Bench | **21.5%** | 10.8% | 3.5% |
+| **Tool** |  |  |  |
+| BFCL V3 | **58.0%** | 55.5% | 31.5% |
+| τ²-Bench | **15.0%** | 2.6% | 9.7% |
 
 
 ## Using Youtu-LLM
