@@ -38,7 +38,7 @@ Youtu-LLM的主要贡献如下:
 | Youtu-LLM-2B-GGUF | Youtu-LLM-2B Instruct模型，GGUF格式 | 🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B-GGUF)|
 
 ## 📰 最新进展
-- [2026.01.28] 现在您可以基于[Transformers](https://github.com/huggingface/transformers/pull/43166)直接使用Youtu-LLM-2B.
+- [2026.01.28] 现在您可以基于[Transformers>=5.1.0](https://github.com/huggingface/transformers/releases/tag/v5.1.0)直接使用Youtu-LLM-2B.
 - [2026.01.07] 现在您可以基于[ModelScope](https://mp.weixin.qq.com/s/JJtQWSYEjnE7GnPkaJ7UNA)微调Youtu-LLM-2B。
 - [2026.01.04] 现在您可以基于[LlamaFactory](https://github.com/hiyouga/LlamaFactory/pull/9707)微调Youtu-LLM-2B。
 
@@ -130,7 +130,7 @@ Youtu-LLM的主要贡献如下:
 本指南将帮助您快速部署并调用 **Youtu-LLM-2B** 模型。该模型支持“思考模式”（Reasoning Mode），能够通过思维链（CoT）生成更高质量的回答。
 
 <details>
-<summary>Transformers（<5.0.0.dev0）</summary>
+<summary>Transformers（>=4.56.0,<=4.57.1）</summary>
 
 如果您想基于较早的transformers版本使用Youtu-LLM-2B，请务必注意从该[commit](https://huggingface.co/tencent/Youtu-LLM-2B/commit/5690998a0a4cae7a7ec970d09262745e00bb6c5c)之前的repo下载模型.
 
@@ -217,7 +217,7 @@ print(f"\n{'='*20} Final Answer {'='*20}\n{final_answer}")
 </details>
 
 <details>
-<summary>Transformers (>=5.0.0.dev0)</summary>
+<summary>Transformers (>=5.1.0)</summary>
 
 ### 1. 环境准备
 
