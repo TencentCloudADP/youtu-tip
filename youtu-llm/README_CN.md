@@ -35,7 +35,19 @@ Youtu-LLM的主要贡献如下:
 | ----------- | ----------- |-----------
 | Youtu-LLM-2B-Base  | Youtu-LLM-2B Base模型 |🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B-Base)|
 | Youtu-LLM-2B | Youtu-LLM-2B Instruct模型 | 🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B)|
-| Youtu-LLM-2B-GGUF | Youtu-LLM-2B Instruct模型，GGUF格式 | 🤗 [下载链接](https://huggingface.co/tencent/Youtu-LLM-2B-GGUF)|
+| Youtu-LLM-2B-GGUF | Youtu-LLM-2B Instruct模型，GGUF格式 | 🤗 [`GGUF`分支下载链接](https://huggingface.co/tencent/Youtu-LLM-2B/tree/GGUF)|
+
+> **Note:** Youtu-LLM-2B的GGUF格式位于[`GGUF`分支](https://huggingface.co/tencent/Youtu-LLM-2B/tree/GGUF). 请在下载时指定(`GGUF`)分支:
+
+```bash
+huggingface-cli download tencent/Youtu-LLM-2B --revision GGUF --include "*.gguf" --local-dir Youtu-LLM-2B-GGUF
+```
+
+```python
+from huggingface_hub import hf_hub_download
+hf_hub_download("tencent/Youtu-LLM-2B", "Youtu-LLM-2B-Q8_0.gguf", revision="GGUF")
+# or: hf_hub_download("tencent/Youtu-LLM-2B", "Youtu-LLM-2B-F16.gguf", revision="GGUF")
+```
 
 ## 📰 最新进展
 - [2026.01.28] 现在您可以基于[Transformers>=5.1.0](https://github.com/huggingface/transformers/releases/tag/v5.1.0)直接使用Youtu-LLM-2B.
