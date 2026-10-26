@@ -37,7 +37,7 @@ The key contributions of Youtu-LLM are as follows:
 | Youtu-LLM-2B | Instruct model of Youtu-LLM-2B | 🤗 [Model](https://huggingface.co/tencent/Youtu-LLM-2B)|
 | Youtu-LLM-2B-GGUF | Instruct model of Youtu-LLM-2B, in GGUF format | 🤗 [`GGUF` branch](https://huggingface.co/tencent/Youtu-LLM-2B/tree/GGUF)|
 
-> **Note:** The GGUF weights of Youtu-LLM-2B are available on the [`GGUF` branch](https://huggingface.co/tencent/Youtu-LLM-2B/tree/GGUF) of this repository. Please specify the revision (`GGUF`) when downloading them:
+> **Note:** The GGUF weights of Youtu-LLM-2B are available on the [`GGUF` branch](https://huggingface.co/tencent/Youtu-LLM-2B/tree/GGUF). Please specify the revision (`GGUF`) when downloading them:
 
 ```bash
 huggingface-cli download tencent/Youtu-LLM-2B --revision GGUF --include "*.gguf" --local-dir Youtu-LLM-2B-GGUF
